@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discount app</title> 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <main class="w-full sm:w-6/12 mx-auto my-8 p-8 shadow-xl space-y-4 ">
-        <label class="text-3xl font-bold" for="price">
-            Enter your price
-        </label>
-        <input type="number" name="price" id="price" class="block border my-4 py-1 px-2 rounded" placeholer="enter your price">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount app</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="w-full sm:w-6/12 mx-auto my-8 p-8 shadow-xl space-y-4">
+      <h1 class="text-3xl font-bold">Price: <span id="price">1000</span></h1>
 
-        <button id="btn" class="py-1 px-3 rounded text-white bg-cyan-400">
-            Apply 30% discount
-        </button>
+      <div class="flex w-full justify-around items-center">
+        <div class="">
+          <button id="btn" class="py-1 px-3 rounded text-white bg-cyan-400">
+            Apply coupon
+          </button>
+        </div>
 
-        <h2 class="text-2xl"> You have to pay: <span id="display"></span></h2>
-        <h2 class="text-2xl"> You have Save: <span id="save"></span></h2>
+        <input
+          type="text"
+          name="coupon"
+          id="coupon"
+          class="border block my-4 py-1 px-2 rounded"
+          placeholder="enter your coupon"
+        />
+      </div>
+
+      <p>your coupon status: <span  id="status">...</span> </p>
+
+      <h2 class="text-2xl">You have to pay: <span id="display"></span></h2>
+      <h2 class="text-2xl">You have Save: <span id="save"></span></h2>
     </main>
 
     <script src="./script/script.js"></script>
     <script src="./script/utility.js"></script>
-</body>
+  </body>
 </html>

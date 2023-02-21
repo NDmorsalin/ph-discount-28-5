@@ -14,3 +14,11 @@ function inputValue(id){
   element.value = ''
   return num;
 }
+
+function inputValueText(id){
+  const element = document.getElementById(id);
+  const text = element.value || '';
+  
+  element.value = ''
+  return text;
+}
