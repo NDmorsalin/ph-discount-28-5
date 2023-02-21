@@ -6,3 +6,11 @@ function elementToValue(id) {
   return num;
 }
 
+function inputValue(id){
+  const element = document.getElementById(id);
+  const text = element.value || 0;
+  const num = parseFloat(text);
+  
+  element.value = ''
+  return num;
+}
